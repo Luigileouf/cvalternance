@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Animation du texte de la machine à écrire
-  const typewriterText = `Vous considérez l'alternance comme un investissement d'avenir pour votre entreprise. Vous envisagez de recruter un alternant pour le faire monter en compétence comme ingénieur développement fullstack ou ingénieur logiciel pour l'intégrer durablement dans votre équipe. La mission et le projet que vous lui confiez s'inscrivent dans le développement de votre entreprise permettant une montée en compétence progressive grâce à un plan de professionnalisation cohérent avec le programme du Master of science développement cloud et mobile de Supinfo. Alors organisons un échange pour mieux nous connaître et construire une collaboration réussie. Pour préparer notre échange, partagez des informations sur votre projet et votre entreprise grâce au formulaire de contact à suivre.`;
+  const typewriterText = `🔍 Vous recherchez un collaborateur à intégrer durablement en MOA, AMOA ou MOE pour des projets web et logiciels. 💻 Vous souhaitez adapter vos produits et services en intégrant une dimension digitale ou créer des produits et services numériques innovants. 🚀 Votre objectif est de placer le digital au cœur de votre stratégie comme levier de création de valeur, de croissance et de développement. 📅 Vous avez un projet ponctuel. 🤝 Organisons un échange pour mieux nous connaître et construire une collaboration réussie. 📝 Pour préparer notre échange, partagez des informations sur votre projet et votre entreprise grâce au formulaire de contact.`;
   const typewriterElement = document.getElementById('typewriter-text');
   let i = 0;
   function typeWriter() {
