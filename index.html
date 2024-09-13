@@ -235,7 +235,11 @@
            <section id="contact">
                <h2>Votre projet</h2>
                <p>"En utilisant ce formulaire, j'accepte que mes données soient utilisées par Loïc Métivier pour communiquer avec moi et les membres de mon équipe dans le cadre de notre projet de recrutement ou de mission."</p>
-               <form id="contact-form">
+                <!-- MODIFIEZ CETTE PARTIE DU FORMULAIRE -->
+               <form id="contact-form" action="https://formspree.io/f/xanwzjqa" method="POST">
+                <!-- Ajoutez un champ caché pour la redirection -->
+                <input type="hidden" name="_next" value="https://loic-metivier.fr//merci.html">
+                <!-- Le reste des champs du formulaire reste inchangé -->
                 <div class="form-group">
                     <label>Civilité :</label>
                     <div class="radio-group">
