@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
   
         // Envoi des données en JSON via une requête POST
-        fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbzFAtd3UOVEV9mB-IPfJS_Bz8tsOhm_tQTAJdd8lQ5XV86Ug1rhLVZFY935hDVvMdq9sg/exec', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
