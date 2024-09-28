@@ -1,248 +1,224 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Loïc Métivier</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document avec CSS Grid et Dépliants</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>Loïc Métivier</h1>
-        <img src="DSC_7957-2.jpg" alt="Photo de Loïc Métivier" class="profile-photo">
-        <p>Ingénieur développement Full Stack | Ingénierie logicielle</p>
-    </header>
 
-  <nav>
-    <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#experience">Expérience</a></li>
-        <li><a href="#education">Formation</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#interests">Intérêts</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <main>
-      <section id="about" class="animate-section">
-          <h2>À propos de moi</h2>
-          <p>J'aspire à concevoir, réaliser, développer des applications et des logiciels qui changent le monde et apportent une amélioration concrète dans la vie des gens.</p>
-      </section>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <h1>Loïc Métivier</h1>
+      <img src="DSC_7957-2.jpg" alt="Photo" class="photo">
+      <h2>Ingénieur développement full stack | Ingénierie logiciel</h2>
+    </div>
+    <nav class="nav">
+      <a href="#section1">A propos</a>
+      <a href="#section2">Expériences</a>
+      <a href="#section3">Formations</a>
+      <a href="#section4">Compétences</a>
+      <a href="#section5">Intérets</a>
+      <a href="#section6">Contact</a>
+    </nav>
+  </header>
 
+  <!-- Body -->
+  <main class="main">
 
-        <section id="experience">
-            <h2>Expérience</h2>
-            <div class="experience-container">
-                <!-- Expériences ici -->
-                <div class="experience-item">
-                    <h3>Consultant en stratégie et développement digital</h3>
-                        <p>Cadres en mission | Portage salarial | Septembre 2023 - A ce jour</p>
-                    <button class="details-button" data-details="exp1">En savoir plus</button>
-                    <div id="exp1" class="details-content">
-                        <p>📚 Étudier les opportunités et la faisabilité d'un projet de développement web et logiciel.</p>
-                        <p>📈 Analyser la dimension économique d'un projet technologique.</p>
-                        <p>🔍 Analyser les risques d'un projet numérique.</p>
-                        <p>🌐 Proposer des axes de développement stratégique digitaux.</p>
-                        <p>📱 Concevoir et développer des plateformes digitales et des applications mobiles.</p>
-                        <p>🏅 Plateforme solidaire et participative visant à générer un budget de 40 000 € par an pour la section sportive de haut niveau d'une association qui accompagne de jeunes athlètes dans des compétitions européennes et mondiales juniors.</p>
-                        <p>🏠 Plateforme digitale « aidante » conçue pour accompagner les propriétaires vendeurs dans la réalisation de la vente de leur bien au sein d'une agence immobilière appartenant à un réseau national.</p>
-                    </div>
-                </div>
-                <!-- Ajoutez plus d'expériences ici selon le modèle -->
-                <div class="experience-item">
-                    <h3>Directeur marketing et digital externalisé</h3>
-                        <p>La fabrique de stratégies créatives | Entrepreneuriat | Septembre 2021 - Septembre 2023</p>
-                    <button class="details-button" data-details="exp2">En savoir plus</button>
-                    <div id="exp2" class="details-content">
-                        <p>👔 Avec ou sans cravate : Plateforme de location d’espace vacant dans les entreprises</p>
-                        <p>⚙️ Évolution fonctionnelle de la plateforme </p>
-                        <p>🔧 Optimiser l'environnement WordPress</p>
-                        <p>📲 Wiisle : Application mobile pour favoriser la communication au niveau local</p>
-                        <p>⚠️ Éviter le risque d’obsolescence de l’application</p>
-                        <p>👥 Démocratiser l’usage de l’application grâce à l’expérience Utilisateur</p>
-                    </div>
-                </div>
-                <!-- Ajoutez plus d'expériences ici selon le modèle -->
-                <div class="experience-item">
-                    <h3>Directeur marketing et digital</h3>
-                        <p>Master Play Game | Entrepreneuriat | Mars 2015 - Janvier 2021</p>
-                    <button class="details-button" data-details="exp3">En savoir plus</button>
-                    <div id="exp3" class="details-content">
-                        <p>🎮 Concevoir une plateforme de jeux vidéo de dimension internationale destinée aux "gamers investisseurs" avec une conscience sociétale.</p>
-                        <p>🤝 Conclure des partenariats et des associations.</p>
-                    </div>
-                </div>
-                <!-- Ajoutez plus d'expériences ici selon le modèle -->
-                <div class="experience-item">
-                    <h3>Ingénieur commercial et consultant IT</h3>
-                        <p>2010 - 2015</p>
-                    <button class="details-button" data-details="exp4">En savoir plus</button>
-                    <div id="exp4" class="details-content">
-                        <p>🕒 Corteo 1 an - Indépendant</p>
-                        <p>🔗 Alter télécom intégrateur solutions réseaux 1 an - CDI</p>
-                         <p>📡 SFR Business 3 ans - CDI</p>
-                        <p>🌐 Cloud, réseaux, sécurité, communication unifiée, très haut débit</p>
-                        <p>🔍 Analyser le système d'information du client.</p>
-                        <p>📋 Étudier les besoins fonctionnels et usages.</p>
-                        <p>💡 Préconiser des solutions technologiques pertinentes.</p>
-                        <p>🤝 Collaborer avec des ingénieurs avant vente et des chefs de projet.</p>
-                        <p>🚀 Participer au déploiement du service comme interlocuteur référent client.</p>
-                    </div>
-                </div>
-                    <!-- Ajoutez plus d'expériences ici selon le modèle -->
-                    <div class="experience-item">
-                        <h3>Expérience de la relation client et de la vente BtoB et BtoC dans différents univers</h3>
-                            <p>1995 - 2009 | CDI </p>
-                        <button class="details-button" data-details="exp5">En savoir plus</button>
-                        <div id="exp5" class="details-content">
-                            <p>🏆 Responsable de la satisfaction client | SFR Business - CDI - 2008 - 2010</p>
-                            <p>🎯 Responsable de la génération de lead IT | Groupe Télécom - Paritel Télécom - Bercytel - 2003 - 2006 - CDI</p>
-                            <p>📈 Commercial BtoB | Plein ciel Papeterie pont Legendre - 1999 - 2001</p>
-                            <p>📊 Commercial BtoB | Atlas Concept - 1997-1998 - CDI</p>
-                            <p>💼 Commercial BtoB | Carlys Finecar France - 1996 - 1997 - CDI</p>
-                            <p>🤝 Chargé de Relations Publiques | United Paradise | Ténérife, île Canarie 🌴 1995 - 1996 - Indépendant</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Ajoutez plus d'expériences ici selon le modèle -->
-            </div>
-        </section>
+    <!-- Section 1 -->
+    <section id="section1" class="section">
+      <h2>A propos de moi</h2>
+      <p>J'aspire à concevoir, réaliser, développer des applications et des logiciels qui changent le monde et apportent une amélioration concrète dans la vie des gens.</p>
+    </section>
 
-        <section id="education">
-            <h2>Formation</h2>
-            <div class="education-container">
-                <!-- Formations ici -->
-                <div class="education-item">
-                    <h3>Développeur Full Stack</h3>
-                    <p>Datascientest | 2024 - 2025</p>
-                    <button class="details-button" data-details="edu1">En savoir plus</button>
-                    <div id="edu1" class="details-content">
-                        <p>📜 Certification professionnelle niveau 7 Mastére | Titre RNCP 36286 Expert en informatique et systèmes d'information</p>
-                        <p>🧐 Analyser et définir une stratégie de systèmes d'information</p>
-                        <p>📊 Piloter et manager les projets informatiques</p>
-                        <p>💻 Concevoir et développer une application informatique</p>
-                        <p>🔐 Manager la cybersécurité des systèmes, applications et bases de données</p>
-                        <p>📈 Construire et développer des modèles de big data</p>
-                    </div>
-                </div>
-                <!-- Ajoutez plus de formations ici selon le modèle -->
-                <div class="education-item">
-                    <h3>MBA Marketing communication</h3>
-                    <p>Studi | 2024 - 2025 </p>
-                    <button class="details-button" data-details="edu2">En savoir plus</button>
-                    <div id="edu2" class="details-content">
-                        <p>📜 Certification professionnelle niveau 7 Mastére | Titre RNCP35960 Manager produits et marketing</p>
-                        <p>🎯 Définition de la stratégie marketing de l'entreprise</p>
-                        <p>🚀 Déploiement de la stratégie marketing</p>
-                        <p>📝 Mise en œuvre du plan marketing</p>
-                        <p>👥 Management des ressources et pilotage de la performance collective</p>
-                    </div>
-                </div>
-                <!-- Ajoutez plus de formations ici selon le modèle -->
-                <div class="education-item">
-                    <h3>Bachelor Marketing communication</h3>
-                    <p>Studi | 2022 - 2023</p>
-                    <button class="details-button" data-details="edu3">En savoir plus</button>
-                    <div id="edu3" class="details-content">
-                        <p>📜 Certification professionnelle Niveau 6 Bac+3/4 | Titre RNCP 34813 Chargé de communication</p>
-                        <p>🗣️ Élaborer la stratégie de communication interne et externe</p>
-                        <p>🛠️ Élaborer un dispositif de communication</p>
-                        <p>📈 Piloter un projet de communication</p>
-                    </div>
-                </div>
-                <!-- Ajoutez plus de formations ici selon le modèle -->
-                <div class="education-item">
-                    <h3>Responsable du développement commercial</p></h3>
-                    <p>Novancia | 2014 - 2015</p>
-                    <button class="details-button" data-details="edu4">En savoir plus</button>
-                    <div id="edu4" class="details-content">
-                        <p>📜 Certification professionnelle Niveau 6 Bac+3/4 | Titre RNCP 34813</p>
-                        <p>📝 Élaboration du plan opérationnel de développement commercial omnicanal</p>
-                        <p>🚀 Élaboration et mise en œuvre d’une stratégie de prospection omnicanale</p>
-                        <p>🤝 Construction et négociation d’une offre commerciale</p>
-                        <p>👥 Management de l’activité commerciale en mode projet</p>
-                    </div>
-                </div>
-                 <!-- Ajoutez plus de formations ici selon le modèle -->
-            </div>
-        </section>
+    <!-- Section 2 -->
+    <section id="section2" class="section">
+      <h2>Expériences</h2>
+      <div class="cards cards-5">
+        <div class="card">
+            <h3>Consultant en stratégie et développement digital Cadres en mission</h3>
+            <P>Portage salarial | Septembre 2023 - A ce jour</P>
+        </div>
+        <div class="card">
+            <h3>Directeur marketing et digital externalisé</h3>
+            <p>La fabrique de stratégies créatives | Entrepreneuriat | Septembre 2021 - Septembre 2023</p>
+        </div>
+        <div class="card">
+            <h3>Directeur marketing et digital</h3>
+            <p>Master Play Game | Entrepreneuriat | Mars 2015 - Janvier 2021</p>
+        </div>
+        <div class="card">
+            <h3>Ingénieur commercial et consultant IT</h3>
+            <p>2010 - 2015</p>
+        </div>
+        <div class="card">
+            <h3>Expérience de la relation client et de la vente BtoB et BtoC dans différents univers</h3>
+            <p>1995 - 2009 | CDI</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="toggle-btn" data-target="content1">En savoir plus</button>
+        <button class="toggle-btn" data-target="content2">En savoir plus</button>
+        <button class="toggle-btn" data-target="content3">En savoir plus</button>
+        <button class="toggle-btn" data-target="content4">En savoir plus</button>
+        <button class="toggle-btn" data-target="content5">En savoir plus</button>
+      </div>
+      <!-- Contenu dépliant -->
+      <div class="toggle-content" id="content1">
+        <p>📚 Étudier les opportunités et la faisabilité d'un projet de développement web et logiciel.</p>
+        <p>📈 Analyser la dimension économique d'un projet technologique.</p>
+        <p>🔍 Analyser les risques d'un projet numérique.</p>
+        <p>🌐 Proposer des axes de développement stratégique digitaux.</p>
+        <p>📱 Concevoir et développer des plateformes digitales et des applications mobiles.</p>
+        <p>🏅 Plateforme solidaire et participative visant à générer un budget de 40 000 € par an pour la section sportive de haut niveau d'une association qui accompagne de jeunes athlètes dans des compétitions européennes et mondiales juniors.</p>
+        <p>🏠 Plateforme digitale « aidante » conçue pour accompagner les propriétaires vendeurs dans la réalisation de la vente de leur bien au sein d'une agence immobilière appartenant à un réseau national.</p>
+      </div>
+      <div class="toggle-content" id="content2">
+        <p>👔 Avec ou sans cravate : Plateforme de location d’espace vacant dans les entreprises</p>
+        <p>⚙️ Évolution fonctionnelle de la plateforme </p>
+        <p>🔧 Optimiser l'environnement WordPress</p>
+        <p>📲 Wiisle : Application mobile pour favoriser la communication au niveau local</p>
+        <p>⚠️ Éviter le risque d’obsolescence de l’application</p>
+        <p>👥 Démocratiser l’usage de l’application grâce à l’expérience Utilisateur</p>
+      </div>
+      <div class="toggle-content" id="content3">
+        <p>🎮 Concevoir une plateforme de jeux vidéo de dimension internationale destinée aux "gamers investisseurs" avec une conscience sociétale.</p>
+        <p>🤝 Conclure des partenariats et des associations.</p>
+      </div>
+      <div class="toggle-content" id="content4">
+        <p>🕒 Corteo 1 an - Indépendant</p>
+        <p>🔗 Alter télécom intégrateur solutions réseaux 1 an - CDI</p>
+        <p>📡 SFR Business 3 ans - CDI</p>
+        <p>🌐 Cloud, réseaux, sécurité, communication unifiée, très haut débit</p>
+        <p>🔍 Analyser le système d'information du client.</p>
+        <p>📋 Étudier les besoins fonctionnels et usages.</p>
+        <p>💡 Préconiser des solutions technologiques pertinentes.</p>
+        <p>🤝 Collaborer avec des ingénieurs avant vente et des chefs de projet.</p>
+        <p>🚀 Participer au déploiement du service comme interlocuteur référent client.</p>
+      </div>
+      <div class="toggle-content" id="content5">
+        <p>Texte détaillé pour la carte 5.</p>
+        <p>🏆 Responsable de la satisfaction client | SFR Business - CDI - 2008 - 2010</p>
+        <p>🎯 Responsable de la génération de lead IT | Groupe Télécom - Paritel Télécom - Bercytel - 2003 - 2006 - CDI</p>
+        <p>📈 Commercial BtoB | Plein ciel Papeterie pont Legendre - 1999 - 2001</p>
+        <p>📊 Commercial BtoB | Atlas Concept - 1997-1998 - CDI</p>
+        <p>💼 Commercial BtoB | Carlys Finecar France - 1996 - 1997 - CDI</p>
+        <p>🤝 Chargé de Relations Publiques | United Paradise | Ténérife, île Canarie 🌴 1995 - 1996 - Indépendant</p>
+      </div>
+    </section>
 
-        <!-- Autres sections -->
-        <section id="skills">
-            <h2>Compétences</h2>
-            <div class="skills-accordion">
-                 <div class="skill-item">
-                   <button class="skill-toggle">Compétence 1</button>
-                   <div class="skill-content">
-                       <p>Description détaillée de la compétence 1. Vous pouvez inclure ici des exemples, des niveaux de maîtrise, des certifications, etc.</p>
-                   </div>
-               </div>
-               <div class="skill-item">
-                       <button class="skill-toggle">Compétence 2</button>
-                    <div class="skill-content">
-                           <p>Description détaillée de la compétence 2.</p>
-                       </div>
-                </div>
-                   <div class="skill-item">
-                    <button class="skill-toggle">Compétence 3</button>
-                    <div class="skill-content">
-                        <p>Description détaillée de la compétence 3.</p>
-                       </div>
-                </div>
-                   <div class="skill-item">
-                    <button class="skill-toggle">Compétence 4</button>
-                    <div class="skill-content">
-                           <p>Description détaillée de la compétence 4.</p>
-                    </div>
-                   </div>
-            </div>
-           </section>
-       
-           <section id="interests" class="animate-section">
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-                   <h2>Intérêts</h2>
-                   <ul>
-                    <li>
-                      <i class="fas fa-book"></i>
-                          <span>Karaté | Préparation ceinture noire 1ᵉʳ dan | Compétition | Assistant cours enfant</span>
-                    </li>
-                    <li>
-                          <i class="fas fa-hiking"></i>
-                          <span>Mentor bénévole | Demain.org</span>
-                        </li>
-                        <li>
-                         <i class="fas fa-camera"></i>
-                         <span>Expression artistique | Écriture d’histoire, prose...</span>
-                        </li>
-                        <li>
-                         <i class="fas fa-guitar"></i>
-                         <span>Théâtre d’improvisation | Expression orale </span>
-                        </li>
-                        <!-- Ajoutez d'autres intérêts selon vos préférences -->
-                      </ul>
-               </section>
-       
-           <section id="call-to-action">
-             <h2>Merci pour votre intérêt :)</h2>
-              <div id="typewriter-text">
-                   <p>Chargement du message...</p>
-                  </div>
-           </section>
-       
-           <section id="contact">
-             <h2>Votre projet</h2>
-                <p>"En utilisant ce formulaire, j'accepte que mes données soient utilisées par Loïc Métivier pour communiquer avec moi et les membres de mon équipe dans le cadre de notre projet de recrutement ou de mission."</p>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScO2v3h5BTTcg8QoDv6-zEUyWa1nDpVXT9fOFE3jM8BhEMCrQ/viewform?embedded=true" width="580" height="800" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
-            </section>
+    <!-- Section 3 -->
+<section id="section3" class="section">
+  <h2>Formation</h2>
+  <div class="cards cards-4">
+      <div class="card"><h3>Développeur Full Stack</h3><p>Datascientest | 2024 - 2025</p></div>
+      <div class="card"><h3>MBA Marketing communication</h3><p>Studi | 2024 - 2025 </p></div>
+      <div class="card"><h3>Bachelor Marketing communication</h3><p>Studi | 2022 - 2023</p></div>
+      <div class="card"><h3>Responsable du développement commercial</h3><p>Novancia | 2014 - 2015</p></div>
+  </div>
+  <div class="buttons">
+      <button class="toggle-btn" data-target="content6">Déplier 1</button>
+      <button class="toggle-btn" data-target="content7">Déplier 2</button>
+      <button class="toggle-btn" data-target="content8">Déplier 3</button>
+      <button class="toggle-btn" data-target="content9">Déplier 4</button>
+  </div>
+  <!-- Contenu dépliant -->
+  <div class="toggle-content" id="content6">
+      <p>📜 Certification professionnelle niveau 7 Mastére | Titre RNCP 36286 Expert en informatique et systèmes d'information</p>
+      <p>🧐 Analyser et définir une stratégie de systèmes d'information</p>
+      <p>📊 Piloter et manager les projets informatiques</p>
+      <p>💻 Concevoir et développer une application informatique</p>
+      <p>🔐 Manager la cybersécurité des systèmes, applications et bases de données</p>
+      <p>📈 Construire et développer des modèles de big data</p>
+  </div>
+  <div class="toggle-content" id="content7">
+      <p>📜 Certification professionnelle niveau 7 Mastére | Titre RNCP35960 Manager produits et marketing</p>
+      <p>🎯 Définition de la stratégie marketing de l'entreprise</p>
+      <p>🚀 Déploiement de la stratégie marketing</p>
+      <p>📝 Mise en œuvre du plan marketing</p>
+      <p>👥 Management des ressources et pilotage de la performance collective</p>
+  </div>
+  <div class="toggle-content" id="content8">
+      <p>📜 Certification professionnelle Niveau 6 Bac+3/4 | Titre RNCP 34813 Chargé de communication</p>
+      <p>🗣️ Élaborer la stratégie de communication interne et externe</p>
+      <p>🛠️ Élaborer un dispositif de communication</p>
+      <p>📈 Piloter un projet de communication</p>
+  </div>
+  <div class="toggle-content" id="content9">
+      <p>📜 Certification professionnelle Niveau 6 Bac+3/4 | Titre RNCP 34813</p>
+      <p>📝 Élaboration du plan opérationnel de développement commercial omnicanal</p>
+      <p>🚀 Élaboration et mise en œuvre d’une stratégie de prospection omnicanale</p>
+      <p>🤝 Construction et négociation d’une offre commerciale</p>
+      <p>👥 Management de l’activité commerciale en mode projet</p>
+  </div>
+</section>
 
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2023 Loïc Métivier. Tous droits réservés. lometivier@gmail.com - 06 13 52 48 86 </p>
-            </div>
-        </footer>
-    </body>
+    <!-- Section 4 -->
+    <section id="section4" class="section">
+      <h2>Compétences</h2>
+      <div class="cards cards-5">
+        <div class="card">Etudes avant projet</div>
+        <div class="card">Stratégie digitale</div>
+        <div class="card">Gestion de projet</div>
+        <div class="card">Langage</div>
+        <div class="card">Outil</div>
+      </div>
+      <div class="buttons">
+        <button class="toggle-btn" data-target="content10">En savoir plus</button>
+        <button class="toggle-btn" data-target="content11">En savoir plus</button>
+        <button class="toggle-btn" data-target="content12">En savoir plus</button>
+        <button class="toggle-btn" data-target="content13">En savoir plus</button>
+        <button class="toggle-btn" data-target="content14">En savoir plus</button>
+      </div>
+      <!-- Contenu dépliant -->
+      <div class="toggle-content" id="content10">
+        <p>Texte détaillé pour la carte 1.</p>
+      </div>
+      <div class="toggle-content" id="content11">
+        <p>Texte détaillé pour la carte 2.</p>
+      </div>
+      <div class="toggle-content" id="content12">
+        <p>Texte détaillé pour la carte 3.</p>
+      </div>
+      <div class="toggle-content" id="content13">
+        <p>Texte détaillé pour la carte 4.</p>
+      </div>
+      <div class="toggle-content" id="content14">
+        <p>Texte détaillé pour la carte 5.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section5" class="section">
+      <h2>Intérêts</h2>
+      <div class="cards cards-4">
+        <div class="card"><h3>🥋Karaté</h3><p>Préparation ceinture noire 1ᵉʳ dan | Compétition | Assistant cours enfant</p></div>
+        <div class="card"><h3>🎓Mentorat bénévole</h3><p>Demain.org | Etudiant à partir de bac+3</p></div>
+        <div class="card"><h3>🎨Expression artistique</h3><p>Écriture, prose, storytelling, graphisme...</p></div>
+        <div class="card"><h3>🎭Théâtre d’improvisation</h3><p>Expression orale</p></div>
+      </div>
+    </section>
+
+    <!--animation machine à écrire -->
+    <div id="typewriter-container">
+      <p id="typewriter-text"></p>
+    </div>    
+
+    <!-- Section 6 -->
+    <section id="section6" class="section">
+      <h2>Contact</h2>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/appI3XXaFu2C9ZTAx/shrDTKwzrXunlL8SD" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Texte dans le footer, aligné sur une ligne</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
-       
