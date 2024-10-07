@@ -22,7 +22,7 @@ toggleButtons.forEach(button => {
 });
 
 // Test animation machine à écrire 
-const text = "Utilisez le formulaire ci-dessous pour partager votre projet de recrutement ou de mission :)";
+const text = "Utilisez le formulaire ci-dessous pour partager votre projet d'intégration d'un alternant :)";
 
 let i = 0;
 const speed = 50; // Vitesse de l'animation (en ms)
